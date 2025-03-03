@@ -1,0 +1,53 @@
+.call {
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  border-left: 1px solid #D9FFF5;
+  padding-top: 24px;
+  overflow: auto;
+  @media (min-width: 768px) {
+    overflow: visible;
+  }
+
+
+  &__modal-btn-close {
+    margin-bottom: 16px;
+  }
+  @media (min-width: 768px) {
+    &__inner {
+      position: relative;
+      
+    }
+    &__modal-btn-close {
+      position: absolute;
+      top: 25px;
+      left: -100px;
+    }
+  }
+  &__form {
+    max-width: 376px;
+    label {
+      display: block;
+      width: 100%;
+      padding-bottom: 16px;
+    }
+    
+
+    input {
+      color: #B5B6BC !important;
+    }
+
+    input[type="text"] {
+      display: block;
+      width: 100%;
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #B5B6BC;
+      padding: 12px 16px;
+      background: #FFFFFF;
+      border: 1px solid #EAEAEA;
+      border-radius: 8px;
+      outline: none;
+    }
+  }
+}

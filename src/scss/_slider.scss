@@ -1,0 +1,19 @@
+.slider {
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    @media (min-width: 500px) {
+        width: 100vw; 
+    }
+
+    .swiper-pagination {
+        position: static !important;
+        width: calc(100vw - var(--offset-container) * 2);
+
+    }
+
+    .swiper-pagination-bullets {
+        padding-top: 16px;
+    }
+
+}

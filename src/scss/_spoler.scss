@@ -1,0 +1,38 @@
+.spoler {
+  &__content {
+    transition: all 0.5s;
+  }
+
+  &__content.hide {
+    overflow: hidden;
+  }
+
+  &__btn {
+    display: flex;
+
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #211b1d;
+
+    &::before {
+      display: inline-block;
+      content: '';
+      transition: 0.5s;
+      background: url('../img/more.svg') no-repeat;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__btn.hide {
+    &::before {
+      transform: rotate(0deg);
+    }
+  }
+}

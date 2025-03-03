@@ -1,0 +1,147 @@
+.tabs {
+  &__button-list {
+    max-width: 100%;
+    overflow-x: auto;
+    display: flex;
+    column-gap: 2px;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1120px) {
+      column-gap: 10px;
+      flex-wrap: wrap;
+      row-gap: 5px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__button-item {
+    flex: 0 0 auto;
+  }
+
+  &__button {
+    color: #7e7e82;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    white-space: nowrap;
+    padding: 8px 10px 8px 16px;
+    border: 2px solid transparent;
+
+    @media (min-width: 1120px) {
+      padding: 9px 9px 9px 9px;
+    }
+
+    &:hover {
+      border: 2px solid #b8ffec;
+      border-radius: 6px;
+      background-color: #ffffff;
+    }
+
+    &_active {
+      padding: 8px 10px 8px 16px;
+      border: 2px solid #b8ffec;
+      border-radius: 6px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.content-tab {
+  margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 48px;
+  }
+
+  @media (min-width: 1440px) {
+    gap: 36px;
+  }
+
+  &__main {
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    /* 142.857% */
+    letter-spacing: 0.2px;
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      line-height: 20px;
+    }
+
+    &:first-child {
+      display: block;
+    }
+  }
+
+  &__text + &__text {
+    margin-top: 31px;
+  }
+
+  &__link-more {
+    max-width: 135px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    display: flex;
+    gap: 8px;
+    transition: all 0.4s;
+
+    &::before {
+      content: '';
+      display: block;
+      background: url('../img/expand.svg');
+      width: 24px;
+      height: 24px;
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      color: #7e7e82;
+      &::before {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__image-box {
+    @media (min-width: 768px) {
+      flex: 0 0 50%;
+      margin: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 768px) {
+      border-radius: 6px;
+    }
+  }
+}

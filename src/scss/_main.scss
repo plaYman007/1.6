@@ -1,0 +1,44 @@
+
+.main {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__title {
+        display: flex;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        padding: 24px 0;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 4px;
+            height: 40px;
+            border-radius: 0 4px 4px 0;
+            background-color: #41F6D7;
+            margin-right: var(--offset-container);
+
+        }
+    }
+
+    &__buttons {
+        gap: 32px;
+        display: none;
+
+        @media (min-width: 1120px) {
+            display: flex;
+        }
+
+        button {
+            font-weight: 500;
+            color: #1B1C21;
+        }
+
+    }
+}

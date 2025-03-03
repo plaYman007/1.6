@@ -1,0 +1,49 @@
+.footer {
+  padding: 16px 0 19px;
+  @media (min-width: 768px) {
+    padding: 32px 0 25px;
+  }
+
+  &__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    
+    line-height: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #7E7E82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+
+  &__confidentiality {
+    @media (min-width: 768px) {
+      align-self: start;
+    }
+  }
+  &__text {
+    @media (min-width: 768px) {
+      max-width: 213px;
+      text-align: right;
+    }
+    @media (min-width: 1440px) {
+      max-width: 330px;
+      text-align: right;
+    }
+  }
+}
+
+
+.copy__box {
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}

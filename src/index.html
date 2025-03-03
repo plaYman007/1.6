@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="page">
+      <aside class="navigation">
+        <div class="container">
+          <div class="navigation__inner">
+            <div class="navigation__header">
+              <button class="burger navigation__btn button-icon">
+                <img src="./img/burger-open.svg" alt="" />
+              </button>
+
+              <div class="logo navigation__logo">
+                <a class="link" href="#">
+                  <img class="logo__img" src="./img/logo.svg" alt="logo" />
+                </a>
+              </div>
+
+              <button class="button-icon navigation__search">
+                <img src="./img/search.svg" alt="search" />
+              </button>
+            </div>
+
+            <nav class="navigation__menu">
+              <ul class="navigation__list fix-container">
+                <li class="navigation__item">
+                  <a class="navigation__link navigation__link_active" href="#"
+                    >Ремонт техники</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Услуги и сервисы</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#"
+                    >Корпоративным клиентам</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Продавцам техники</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Партнерам</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Производителям</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Наши сервисные центры</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="navigation__footer">
+              <div class="buttons navigation__buttons">
+                <button class="button-icon modal-btn-open" data-to="feedback">
+                  <img src="./src/img/call.svg" alt="" />
+                </button>
+                <button class="button-icon modal-btn-open" data-to="call">
+                  <img src="./src/img/chat.svg" alt="" />
+                </button>
+                <button class="button-icon">
+                  <img src="./src/img/profile.svg" alt="" />
+                </button>
+              </div>
+              <a class="navigation__mail" href="mailto:mail@cps.com"
+                >mail@cps.com</a
+              >
+              <a class="navigation__phone" href="tel:88008908900"
+                >8 800 890 8900</a
+              >
+            </div>
+
+            <ul class="navigation__languages">
+              <li class="navigation__languages-item">
+                <button
+                  class="navigation__languages-btn navigation__languages-btn_active"
+                  href="#"
+                >
+                  ru
+                </button>
+              </li>
+              <li class="navigation__languages-item">
+                <button class="navigation__languages-btn" href="#"> en </button>
+              </li>
+              <li class="navigation__languages-item">
+                <button class="navigation__languages-btn" href="#"> ch </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <div class="wrapper">
+        <header class="header">
+          <div class="container">
+            <div class="header__inner">
+              <button class="burger header__burger">
+                <img src="./img/burger-open.svg" alt="" />
+              </button>
+
+              <div class="logo header__logo">
+                <a class="link" href="#">
+                  <img class="logo__img" src="./img/logo.svg" alt="logo" />
+                </a>
+              </div>
+
+              <div class="buttons header__buttons-profile">
+                <button class="button-icon modal-btn-open" data-to="feedback">
+                  <img src="./img/call.svg" alt="call" />
+                </button>
+                <button class="button-icon modal-btn-open" data-to="call">
+                  <img src="./img/chat.svg" alt="chat" />
+                </button>
+                <button class="button-icon">
+                  <img src="./img/profile.svg" alt="profile" />
+                </button>
+              </div>
+
+              <div class="buttons header__buttons-services">
+                <button class="button-icon">
+                  <img src="./img/repair.svg" alt="repair" />
+                </button>
+                <button class="button-icon">
+                  <img src="./img/checkstatus.svg" alt="checkstatus" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="container">
+            <main class="main">
+              <div class="main__header">
+                <h1 class="fix-container main__title">Услуги и сервисы</h1>
+                <div class="main__buttons">
+                  <button class="button-icon">
+                    <span>Оставить заявку</span>
+                    <img src="./img/repair.svg" alt="" />
+                  </button>
+                  <button class="button-icon">
+                    <span>Статус ремонта</span>
+                    <img src="./img/checkstatus.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="tabs">
+                <ul class="tabs__button-list">
+                  <li class="tabs__button-item">
+                    <button class="tabs__button tabs__button_active"
+                      >Ремонтируемые бренды</button
+                    >
+                  </li>
+                  <li class="tabs__button-item">
+                    <button class="tabs__button">Дополнительные услуги</button>
+                  </li>
+                  <li class="tabs__button-item">
+                    <button class="tabs__button">Цены на услуги</button>
+                  </li>
+                  <li class="tabs__button-item">
+                    <button class="tabs__button"
+                      >Адреса сервисных центров</button
+                    >
+                  </li>
+                  <li class="tabs__button-item">
+                    <button class="tabs__button">Специальные цены</button>
+                  </li>
+                  <li class="tabs__button-item">
+                    <button class="tabs__button">Отзывы</button>
+                  </li>
+                </ul>
+
+                <div class="tabs__content-list">
+                  <div class="tabs__content-item content-tab">
+                    <div class="content-tab__main">
+                      <div class="content-tab__desc">
+                        <p class="content-tab__text">
+                          Мы являемся авторизованным сервисным центром по
+                          ремонту техники Dell. Только у нас вы можете
+                          отремонтировать свой ноутбук Dell с официальной
+                          гарантией производителя.
+                        </p>
+                        <p class="content-tab__text">
+                          Мы успешно работаем с 1992 года и заслужили репутацию
+                          надежного партнера, что подтверждает большое
+                          количество постоянных клиентов. Мы гордимся тем, что к
+                          нам обращаются по рекомендациям и, в свою очередь,
+                          советуют нас родным и близким.
+                        </p>
+                      </div>
+                      <a class="content-tab__link-more" href="#"
+                        >Читать далее</a
+                      >
+                    </div>
+
+                    <div class="fix-container content-tab__image-box">
+                      <img
+                        class="content-tab__image"
+                        src="./img/cps.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <section class="brands">
+                <div class="brands__inner">
+                  <div class="fix-container title">
+                    <h2 class="title__text"
+                      >Ремонт техники различных брендов</h2
+                    >
+                  </div>
+
+                  <div class="brands__content spoler">
+                    <div class="brands-wrapper spoler__content">
+                      <!-- Slides -->
+                      <div class="brands__item-wrap">
+                        <a href="#" class="brands__item">
+                          <img src="./img/brands/Lenovo.svg" alt="Lenovo" />
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <div class="brands__item-wrap">
+                        <a href="#" class="brands__item">
+                          <img src="./img/brands/samsung.svg" alt="samsung" />
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <div class="brands__item-wrap">
+                        <a href="#" class="brands__item">
+                          <img src="./img/brands/apple.svg" alt="apple" />
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <div class="brands__item-wrap">
+                        <a href="#" class="brands__item">
+                          <img src="./img/brands/bosch.svg" alt="bosch" />
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <div class="brands__item-wrap">
+                        <a href="#" class="brands__item">
+                          <img
+                            src="./img/brands/viewsonic.svg"
+                            alt="viewsonic"
+                          />
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <div class="brands__item-wrap">
+                        <a href="#" class="brands__item">
+                          <img
+                            class="hp-img"
+                            src="./img/brands/hp.svg"
+                            alt="hp"
+                          />
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <div class="brands__item-wrap">
+                        <a href="#" class="brands__item">
+                          <img src="./img/brands/bosch.svg" alt="bosch" />
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <div class="brands__item-wrap">
+                        <a href="#" class="brands__item">
+                          <img src="./img/brands/acer.svg" alt="acer" />
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <div class="brands__item-wrap">
+                        <a href="#" class="brands__item">
+                          <img src="./img/brands/Sony.png" alt="sony" />
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <button class="spoler__btn brands__btn"
+                      >Показать все</button
+                    >
+                  </div>
+                </div>
+              </section>
+
+              <section class="types">
+                <div class="types__inner">
+                  <div class="fix-container title">
+                    <h2 class="title__text">Ремонт различных видов техники</h2>
+                  </div>
+
+                  <div class="types__content spoler">
+                    <div class="types-wrapper spoler__content">
+                      <div class="types__item-wrap">
+                        <a class="types__link" href="#">
+                          <h4 class="types__title">Ремонт ноутбуков</h4>
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="types__item-wrap">
+                        <a class="types__link" href="#">
+                          <h4 class="types__title">Ремонт планшетов</h4>
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="types__item-wrap">
+                        <a class="types__link" href="#">
+                          <h4 class="types__title">Ремонт ПК</h4>
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="types__item-wrap">
+                        <a class="types__link" href="#">
+                          <h4 class="types__title">Ремонт мониторов</h4>
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="types__item-wrap">
+                        <a class="types__link" href="#">
+                          <h4 class="types__title">Ремонт смартфонов</h4>
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="types__item-wrap">
+                        <a class="types__link" href="#">
+                          <h4 class="types__title">Ремонт ноутбуков</h4>
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="types__item-wrap">
+                        <a class="types__link" href="#">
+                          <h4 class="types__title">Ремонт нетбуков</h4>
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="types__item-wrap">
+                        <a class="types__link" href="#">
+                          <h4 class="types__title">Ремонт холодильников</h4>
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="1"
+                              y="1"
+                              width="38"
+                              height="38"
+                              rx="19"
+                              stroke="#FF3E79"
+                              stroke-width="2"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                              fill="#FF3E79"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <button class="spoler__btn brands__btn"
+                      >Показать все</button
+                    >
+                  </div>
+                </div>
+              </section>
+
+              <section class="services">
+                <div class="services__inner">
+                  <div class="fix-container title">
+                    <h2 class="title__text">Цены на услуги</h2>
+                  </div>
+
+                  <div class="services__content">
+                    <div class="services__top">
+                      <div class="services__top-inner">
+                        <h5 class="services__top-subtitle">Ремонтные услуги</h5>
+                        <div class="services__top-desc">
+                          <h5 class="services__top-price">Цена</h5>
+                          <h5 class="services__top-term">Срок</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="services-wrapper">
+                      <div class="services__item-wrap">
+                        <div class="services__item">
+                          <div class="services__item-inner">
+                            <div class="services__header">
+                              <h5 class="services__subtitle"
+                                >Ремонтные услуги</h5
+                              >
+                              <h6 class="services__name">Диагностика</h6>
+                            </div>
+                            <div class="services__desc">
+                              <div class="services__price">
+                                <h5 class="services__subtitle">Цена</h5>
+                                <h6 class="services__name">Бесплатно</h6>
+                              </div>
+                              <div class="services__term">
+                                <h5 class="services__subtitle">Срок</h5>
+                                <h6 class="services__name">30 мин</h6>
+                              </div>
+                              <button class="services__button">Заказать</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="services__item-wrap">
+                        <div class="services__item">
+                          <div class="services__item-inner">
+                            <div class="services__header">
+                              <h5 class="services__subtitle"
+                                >Ремонтные услуги</h5
+                              >
+                              <h6 class="services__name">Замена дисплея</h6>
+                            </div>
+                            <div class="services__desc">
+                              <div class="services__price">
+                                <h5 class="services__subtitle">Цена</h5>
+                                <h6 class="services__name">1 000 ₽</h6>
+                              </div>
+                              <div class="services__term">
+                                <h5 class="services__subtitle">Срок</h5>
+                                <h6 class="services__name">30-120 мин</h6>
+                              </div>
+                              <button class="services__button">Заказать</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="services__item-wrap">
+                        <div class="services__item">
+                          <div class="services__item-inner">
+                            <div class="services__header">
+                              <h5 class="services__subtitle"
+                                >Ремонтные услуги</h5
+                              >
+                              <h6 class="services__name"
+                                >Замена полифонического динамика</h6
+                              >
+                            </div>
+                            <div class="services__desc">
+                              <div class="services__price">
+                                <h5 class="services__subtitle">Цена</h5>
+                                <h6 class="services__name">1 000 ₽</h6>
+                              </div>
+                              <div class="services__term">
+                                <h5 class="services__subtitle">Срок</h5>
+                                <h6 class="services__name">30-120 мин</h6>
+                              </div>
+                              <button class="services__button">Заказать</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="services__item-wrap">
+                        <div class="services__item">
+                          <div class="services__item-inner">
+                            <div class="services__header">
+                              <h5 class="services__subtitle"
+                                >Ремонтные услуги</h5
+                              >
+                              <h6 class="services__name"
+                                >Тестирование с выдачей технического
+                                заключения</h6
+                              >
+                            </div>
+                            <div class="services__desc">
+                              <div class="services__price">
+                                <h5 class="services__subtitle">Цена</h5>
+                                <h6 class="services__name">1 000 ₽</h6>
+                              </div>
+                              <div class="services__term">
+                                <h5 class="services__subtitle">Срок</h5>
+                                <h6 class="services__name">30-120 мин</h6>
+                              </div>
+                              <button class="services__button">Заказать</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="services__item-wrap">
+                        <div class="services__item">
+                          <div class="services__item-inner">
+                            <div class="services__header">
+                              <h5 class="services__subtitle"
+                                >Ремонтные услуги</h5
+                              >
+                              <h6 class="services__name"
+                                >Замена программного обеспечения</h6
+                              >
+                            </div>
+                            <div class="services__desc">
+                              <div class="services__price">
+                                <h5 class="services__subtitle">Цена</h5>
+                                <h6 class="services__name">1 000 ₽</h6>
+                              </div>
+                              <div class="services__term">
+                                <h5 class="services__subtitle">Срок</h5>
+                                <h6 class="services__name">30-120 мин</h6>
+                              </div>
+                              <button class="services__button">Заказать</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </section>
+              <section class="tax">
+                <p class="tax__text"
+                  >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+                  единичную услугу. Для получения коммерческого предложения на
+                  постоянное обслуживание, оставьте заявку.
+                </p>
+                <a class="tax__link" href="#"
+                  >Получить коммерческое предложение</a
+                >
+              </section>
+            </main>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__content">
+              <div class="copy__box">
+                <p class="copy__box-top">© 2019 CPS</p>
+                <p class="copy__box-bottom">Разработано командой Apesong</p>
+              </div>
+              <a class="footer__confidentiality" href="#">
+                Политика конфидециальности
+              </a>
+              <p class="footer__text"
+                >Информация, размещенная на данной странице, не является
+                публичной офертой
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <div class="modal-box">
+        <aside class="modal feedback">
+          <div class="container">
+            <div class="feedback__inner">
+              <button class="modal-btn-close feedback__modal-btn-close">
+                <img src="./img/burger.svg" alt="close" />
+              </button>
+              <h1 class="fix-container main__title">Обратная связь</h1>
+
+              <form class="feedback__form" action="">
+                <label>
+                  <input class="feedback__name" type="text" placeholder="Имя" />
+                </label>
+                <label>
+                  <input
+                    class="feedback__phone"
+                    type="text"
+                    placeholder="Телефон"
+                  />
+                </label>
+                <label>
+                  <input
+                    class="feedback__mail"
+                    type="text"
+                    placeholder="Электронная почта"
+                  />
+                </label>
+                <label>
+                  <textarea
+                    class="feedback__message"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Сообщение"
+                  ></textarea>
+                </label>
+
+                <label class="feedback__agree">
+                  Нажимая “отправить”, вы даете согласие на
+                  <a href="#">обработку персональных данных</a> и соглашаетесь с
+                  нашей <a href="#">политикой конфиденциальности</a>
+                </label>
+
+                <button class="services__button feedback__button"
+                  >Отправить</button
+                >
+              </form>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="modal call">
+          <div class="container">
+            <div class="call__inner">
+              <button class="modal-btn-close call__modal-btn-close">
+                <img src="./img/burger.svg" alt="close" />
+              </button>
+              <h1 class="fix-container main__title">Заказать звонок</h1>
+
+              <form class="call__form" action="">
+                <label>
+                  <input
+                    class="call__phone"
+                    type="text"
+                    placeholder="Телефон"
+                  />
+                </label>
+
+                <label class="feedback__agree">
+                  Нажимая “отправить”, вы даете согласие на
+                  <a href="#">обработку персональных данных</a> и соглашаетесь с
+                  нашей <a href="#">политикой конфиденциальности</a>
+                </label>
+
+                <button class="services__button feedback__button"
+                  >Отправить</button
+                >
+              </form>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

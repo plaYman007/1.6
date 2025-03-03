@@ -1,0 +1,4 @@
+.fix-container {
+    margin-left:  calc(var(--offset-container) * -1);
+    margin-right:  calc(var(--offset-container) * -1);
+}

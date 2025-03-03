@@ -1,0 +1,50 @@
+.tax {
+  padding: 0 0 40px 0;
+  @media (min-width: 768px) {
+    padding-bottom: 47px;
+  }
+  @media (min-width: 1440px) {
+    padding-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    margin-bottom: 19px;
+    @media (min-width: 768px) {
+      max-width: 421px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    max-width: 192px;
+    position: relative;
+    transition: all 0.5s;
+    @media (min-width: 768px) {
+      max-width: 100%;
+      padding-right: 24px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: 70px;
+      bottom: -5px;
+      width: 24px;
+      height: 28px;
+      background: url('../img/tax.svg') no-repeat;
+      @media (min-width: 768px) {
+        right: 0;
+        bottom: -3px;
+      }
+    }
+    &:hover {
+      color: gray;
+    }
+  }
+}
